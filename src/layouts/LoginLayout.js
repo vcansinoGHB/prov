@@ -1,19 +1,20 @@
-import React, { Component } from 'react';  
-import { Route } from 'react-router-dom';  
+import React from 'react';  
+import { Route } from 'react-router-dom';
   
 const LoginLayout = ({ children }) => (                         
-    <div>
+    <div className="bg-login">
       {children}                                       
     </div>  
   );  
   
   const LoginLayoutRoute = ({component: Component, ...rest}) => {  
-    return (  
-      <Route {...rest} render={matchProps => (  
+    return (      
+      <Route {...rest} render={matchProps => (         
         <LoginLayout>  
             <Component {...matchProps} />  
-        </LoginLayout>  
-      )} />  
+        </LoginLayout>          
+      )} /> 
+      
     )  
   };  
   

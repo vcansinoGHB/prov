@@ -1,11 +1,20 @@
-import React, { Component } from 'react';  
-import { Route } from 'react-router-dom';  
+import React from 'react';  
+import { Route, Redirect } from 'react-router-dom';  
+import Nav from '../components/Nav';
+import Header from '../components/Header';
+
   
 const DashboardLayout = ({children, ...rest}) => {  
   return (  
-    <div className="page page-dashboard">  
-      <div className="sidebar">This is the Second Layout</div>  
-      <div className="main">{children}</div>  
+    <div className="page page-dashboard"> 
+       <Header/> 
+       <div id="wrapper">
+          <Nav/>  
+            <div className="container-fluid">
+              {children}             
+            </div>
+         
+       </div> 
     </div>  
   )  
 }  
@@ -13,10 +22,14 @@ const DashboardLayout = ({children, ...rest}) => {
 const DashboardLayoutRoute = ({component: Component, ...rest}) => {  
   return (  
     <Route {...rest} render={matchProps => (  
+      localStorage.getItem('usrtrx') ?  
       <DashboardLayout>  
           <Component {...matchProps} />  
-      </DashboardLayout>  
+      </DashboardLayout>
+      :
+      <Redirect to="/login" />  
     )} />  
+    
   )  
 };  
   

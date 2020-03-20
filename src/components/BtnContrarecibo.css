@@ -1,0 +1,14 @@
+.custom-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .7rem;
+  margin: 2px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color:#fff;
+  padding: .1em .2em;
+  background-color:#9555af;
+  margin-bottom: 10px;
+}

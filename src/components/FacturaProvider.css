@@ -1,0 +1,48 @@
+.mainFactura {
+    border-bottom: 1px dashed #c6c6c6;
+    border-radius: 1px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+.mainFactura .itemsFactura {
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.mainFactura .itemsFactura .linkfactura {
+    _background-color: #7fffd4;
+    display: inline-block;
+    width: 100%;
+}
+
+.mainFactura .itemsFactura .opciones {
+    _background-color: red;
+    display: inline-block;
+    text-align: right;
+    width: 70%;
+}
+
+.mainFactura .itemFacturaMonto {
+    text-align: right;
+    font-size: .8rem;
+}
+
+
+.montolabelc {
+  color: grey;
+}
+
+a.colorlink:hover {
+ color:#F07902;
+}
+
+.colorlink {
+ color:#F07902;
+}
+.navmain{
+  margin: 0 auto;
+  position: relative;
+}
+

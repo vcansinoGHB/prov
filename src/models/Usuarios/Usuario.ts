@@ -1,0 +1,19 @@
+interface Usuario {
+  provusr_nombre:string;
+  provusr_email:string;
+  provusr_clave:string;
+  provusr_clavechk:string;
+  provusr_activo:number;
+  provusr_admon:number;
+  provusr_factura:number
+  provusr_facturacupon:number;
+  provusr_cambioprov:number;
+  provusr_proveedorID:[];
+  provusr_zonaID:[];
+  provusr_locacionID:[];
+  provusr_empresaID:[];
+  locacion_nombre:string;
+  empresa_nombre:string;
+  proveedor_nombre:string;
+  zontc_nombre:string;
+}

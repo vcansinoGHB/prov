@@ -1,0 +1,9 @@
+.centrado {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.selectw {
+    width: 26%;
+}

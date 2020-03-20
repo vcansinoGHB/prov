@@ -1,0 +1,26 @@
+footer.sticky-footer {
+    position: relative;
+    height: 16px;
+    _background-color: #e9ecef;
+  }
+  
+  footer.sticky-footer .copyright {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+  
+  @media (min-width: 768px) {
+    footer.sticky-footer {
+      width: calc(100% - 225px);
+    }
+  }
+  
+  body.sidebar-toggled footer.sticky-footer {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    body.sidebar-toggled footer.sticky-footer {
+      width: calc(100% - 90px);
+    }
+  }

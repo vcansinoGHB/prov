@@ -1,0 +1,17 @@
+.mainrecibo {
+   display: flex;
+   width: 100%; 
+   margin-bottom: 28px;
+}
+
+.mainrecibo .fecha1 {
+  margin-right: 0.6em;
+}
+
+.mainrecibo .fecha2 {
+  margin-right: 0.6em;  
+}
+
+.mainrecibo .btnsearch {
+    
+}
